@@ -20,7 +20,7 @@ public class Ventana extends JFrame {
 		
 	public Ventana() {
 		
-		this.setSize(400, 350); // Establece las dimensiones de la ventana
+		this.setSize(400, 350);
 		iniciarComponentes();
 		this.setTitle("Mascota Virtual");
 		this.setLocationRelativeTo(null);
@@ -29,9 +29,9 @@ public class Ventana extends JFrame {
 	
 	private void iniciarComponentes() {
 		
-		panel1 = new JPanel(); // Creación de un panel
-		panel1.setLayout(null); // desactiva el diseño de panel por defecto
-		this.getContentPane().add(panel1); // se agrega el panel a la ventana
+		panel1 = new JPanel(); 
+		panel1.setLayout(null); 
+		this.getContentPane().add(panel1); 
 		colocarBotones();
 		
 		
