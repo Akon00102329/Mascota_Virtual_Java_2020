@@ -12,7 +12,7 @@ public class Ventana extends JFrame {
 	private JButton iniciar, salir, revivir, alimentar, desinfectar;
 	private JLabel mostrar_nombre, mostrar_vida, mostrar_edad, mostrar_hambre;
 	private JLabel corna, corna_muerto, epitafio, eti_actividad;
-	//public static JLabel comiendo;	
+	
 	public static JLabel desinfectando;
 	static int time;
 	private boolean alimento = false;
@@ -29,8 +29,8 @@ public class Ventana extends JFrame {
 	
 	private void iniciarComponentes() {
 		
-		panel1 = new JPanel(); // Creación de un panel
-		panel1.setLayout(null); // desactiva el diseño de panel por defecto
+		panel1 = new JPanel(); // CreaciÃ³n de un panel
+		panel1.setLayout(null); // desactiva el diseÃ±o de panel por defecto
 		this.getContentPane().add(panel1); // se agrega el panel a la ventana
 		colocarBotones();
 		
@@ -177,7 +177,7 @@ public class Ventana extends JFrame {
 		mostrar_vida.setBounds(250, 90, 120, 40);
 		panel2.add(mostrar_vida);
 		
-		mostrar_edad = new JLabel("Edad : " + " 0 " + " años");
+		mostrar_edad = new JLabel("Edad : " + " 0 " + " aÃ±os");
 		mostrar_edad.setBounds(250, 120, 120, 40);
 		panel2.add(mostrar_edad);
 		
@@ -185,7 +185,7 @@ public class Ventana extends JFrame {
 		mostrar_hambre.setBounds(250, 150, 120, 40);
 		panel2.add(mostrar_hambre);
 		
-		eti_actividad = new JLabel("Ñam ñam... estoy comiendo");
+		eti_actividad = new JLabel("Ã‘am Ã±am... estoy comiendo");
 		eti_actividad.setBounds(50, 30, 180, 40);
 		panel2.add(eti_actividad);
 		eti_actividad.setVisible(false);
@@ -248,7 +248,7 @@ public class Ventana extends JFrame {
                  try {
                 	    Mascota.set_alimentar();
 						mostrar_hambre.setText("Nivel de hambre : " + Mascota.get_hambre());
-						eti_actividad.setText("Ñam...ñam...Estoy comiendo");
+						eti_actividad.setText("Ã‘am...Ã±am...Estoy comiendo");
 						eti_actividad.setVisible(true);
 						Thread.sleep(6000);
 						eti_actividad.setVisible(false);
@@ -320,7 +320,7 @@ public class Ventana extends JFrame {
     	    	
     	mostrar_vida.setText(Mascota.get_vida() + " %");
     	mostrar_vida.setVisible(true);
-		mostrar_edad.setText("Edad : " + Mascota.get_edad() + " años");
+		mostrar_edad.setText("Edad : " + Mascota.get_edad() + " aÃ±os");
 		mostrar_edad.setVisible(true);
 		mostrar_hambre.setText("Nivel de hambre : " + Mascota.get_hambre());
 		mostrar_hambre.setVisible(true);
